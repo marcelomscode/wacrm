@@ -11,7 +11,7 @@ is included.
 1. Copy the env template and fill it in:
 
    ```bash
-   cp .env.local.example .env.local
+   cp .env.example .env
    ```
 
 2. Build and start (the `--env-file` flag is required — Compose only
@@ -19,7 +19,7 @@ is included.
    keeps its config in `.env.local`):
 
    ```bash
-   docker compose --env-file .env.local up --build -d
+   docker compose --env-file .env up --build -d
    ```
 
 3. The app is served on [http://localhost:3000](http://localhost:3000)
@@ -52,7 +52,7 @@ docker build \
   --build-arg NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key \
   -t wacrm .
 
-docker run -d --env-file .env.local -e PORT=3000 -p 3000:3000 wacrm
+docker run -d --env-file .env -e PORT=3000 -p 3000:3000 wacrm
 ```
 
 ## Notes

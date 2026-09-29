@@ -13,7 +13,7 @@ RUN npm ci
 #
 # NEXT_PUBLIC_* values are inlined into the client bundle at build
 # time, so they must be provided as build args (docker-compose.yml
-# forwards them from .env.local). Server-only secrets (service role
+# forwards them from .env). Server-only secrets (service role
 # key, ENCRYPTION_KEY, META_APP_SECRET, ...) are read at runtime and
 # must NOT be baked into the image.
 # ---------------------------------------------------------------
