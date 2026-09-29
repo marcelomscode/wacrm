@@ -192,9 +192,9 @@ export function Sidebar({ open = false, onClose }: SidebarProps) {
             <Image
               src="/logo-vertice.png"
               alt="Vertice WA"
-              width={32}
+              width={41}
               height={32}
-              className="h-8 w-8 rounded-lg object-cover"
+              className="h-8 w-[41px] object-contain"
             />
             <span className="text-sm font-semibold text-foreground">
               {t("title")}
